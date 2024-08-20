@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container-1{
+    width: 100%;
+    height: 100vh;
+    color: black;
+    margin-top: 70px;
+}
+.name{
+    font-size:60px;
+    font-weight: 700;
+    padding-left: 10px;
+    color: brown;
+}
+.profession{
+    font-variant: small-caps ;
+    font-size: 30px;
+}
+#content{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+}
+#left-content{
+    width: 100%;
+    text-align: left;
+}
+
+#right-content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+#gif-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+}
+#gif{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.quote{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+#icons{
+    width: 100%;
+    font-size: 30px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.fa-linkedin{
+    padding: 10px;
+    background: linear-gradient(to right, #0077B5, #0A66C2);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.fa-facebook{
+    padding: 10px;
+    background: linear-gradient(to right, #3b5998, #1877f2);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.fa-instagram{
+    padding: 10px;
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4, #3D4E96);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.fa-envelope{
+    padding: 10px;
+    background: linear-gradient(to bottom, #ff0000, #ffffff);
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+
+/* mobile view  */
+
+@media only screen and (max-width:767px){
+    #container-1{
+        margin-top:0px;
+    }
+    #content{
+        padding-top:150px;
+    }
+    #left-content{
+        width: 100%;
+    }
+    #right-content{
+        width: 100%;
+        justify-content:center;
+    }
+    #left-content h1{
+        font-size: 18px;
+    }
+    .name{
+        font-size: 35px;
+    }
+    .profession{
+        font-size: 18px;
+    }
+    .quote{
+        font-size: 10px;
+    }
+    #content{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #gif-container{
+        width: 200px;
+        height: 180px;
+    }
+    #icons{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
+
+/* tab view  */
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    #container-1{
+        margin-top:0px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .profession{
+        font-size: 20px;
+    }
+    #left-content h1{
+        font-size: 25px;
+    }
+    .quote{
+        font-size: 12px;
+        text-indent: 10px;
+    }
+    #content{
+        width:85%;
+        padding-top: 220px;
+        height: auto;
+        gap: 10px;
+    }
+    #gif-container{
+        width: 300px;
+        height: 250px;
+    }
+    #icons{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width:1024px) and (max-width:1300px){
+    #content{
+        margin:120px auto;
+    }
+    #left-content{
+        width: 100%;
+        text-align: left;
+        line-height:45px;
+    }
+
+    .name{
+        font-size: 60px;
+    }
+    .quote{
+        font-size: 16px;
+        line-height: 18px;
+        text-indent: 10px;
+    }
+    #content{
+        margin-top: 120px;
+        height: auto;
+        gap: 20px;
+    }
+}

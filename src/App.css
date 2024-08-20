@@ -1,0 +1,19 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+#footer{
+  width: 100%;
+  display: flex;
+  font-size: 30px;
+  height: 100px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: #a52a2a;
+}
+@media screen and (max-width:767px) {
+  #footer{
+    font-size: 20px;
+  }
+}

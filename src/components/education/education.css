@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-2{
+    background-color: var(--secondaryBg);
+    width: 100%;
+    height:100vh;
+    margin-top: 100px;
+}
+#headline{
+    text-align: center;
+    font-variant: small-caps;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    color: brown;
+}
+#edDetails{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    height:500px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s ease-in-out;
+}
+#ed-slider{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    background-color: beige;
+}
+.nextSlide{
+    position: absolute;
+    transform: translateX(100%);
+    background-color:white;
+}
+.lastSlide{
+    position: absolute;
+    transform: translateX(100%);
+    background-color: white;
+}
+#right-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 0;
+    font-size: 30px;
+    cursor: pointer;
+    color: brown;
+}
+#left-arrow{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    font-size: 30px;
+    cursor: pointer;
+    color: brown;
+}
+.school{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    gap: 50px;
+}
+.schoolImg-container{
+    width: 80%;
+}
+.sclImage{
+    width: 100%;
+    box-shadow: 2px 2px 4px 2px brown;
+    height: 90%;
+}
+#picture{
+    width: 100%;
+    height: 90%;
+    margin-top: 20px;
+
+}
+.ed-name{
+    margin-top: 20px;
+    font-size: 25px;
+    color: brown;
+}
+.ed-course{
+    margin-top: 50px;
+    text-align: left;
+    font-size: 25px;
+    color: brown;
+}
+.ed-para{
+    margin-top: 20px;
+    text-align:left;
+    text-indent: 10px;
+    /* font-style: italic; */
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.location{
+    margin-top: 20px;
+    font-size: 20px;
+    color:rgb(228, 18, 18)
+    
+}
+.score{
+    color:yellowgreen;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+
+/* mobile view  */
+
+@media screen and (max-width:767px) {
+    #container-2{
+        margin-top: 0px;
+    }
+ .school{
+    flex-wrap: wrap;
+    gap: 0px;
+    justify-content: space-evenly;
+ }
+#headline{
+    font-size: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#edDetails{
+    width: 100%;
+    height: 500px;
+    padding-top:10px;
+}
+#ed-slider{
+    width: 100%;
+    height: 100%;
+}
+.schoolImg-container{
+    text-align: center;
+    margin-top: 50px;
+    height: 20%;
+}
+.sclImage{
+    width: 100%;
+    height: 100%;
+}
+#picture{
+    margin: auto;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 0;
+    border-radius: 10%;
+}
+.ed-name{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.ed-course{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.ed-para{
+    margin-top: 10px;
+    text-align:center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.location{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.score{
+    color:yellowgreen;
+    font-size: 20px;
+    font-weight: 800;
+}
+#right-arrow{
+    font-size: 20px;
+}
+#left-arrow{
+    font-size: 20px;
+}
+}
+
+
+/* tab view  */
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    #container-2{
+        margin-top: 60px;
+    }
+ .school{
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+ }
+#headline{
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+#edDetails{
+    width: 100%;
+    height: 550px;
+}
+#ed-slider{
+    width: 100%;
+    height: 100%;
+}
+.schoolImg-container{
+    text-align: center;
+    margin-top: 50px;
+    height: 25%;
+}
+.sclImage{
+    width: 100%;
+    height: 100%;
+}
+#picture{
+    margin: auto;
+    width: 280px;
+    height: 200px;
+    margin-bottom: 0;
+    border-radius: 10%;
+}
+.ed-name{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.ed-course{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+.ed-para{
+    margin-top: 10px;
+    text-align:center;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.location{
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+.score{
+    color:yellowgreen;
+    font-size: 20px;
+    font-weight: 800;
+}
+#right-arrow{
+    font-size: 25px;
+}
+#left-arrow{
+    font-size: 25px;
+}
+}
