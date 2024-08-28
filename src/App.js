@@ -3,8 +3,10 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import Nav from './components/nav/nav';
 import Home from './components/home/home';
 import About from './components/about/about';
-import Education from './components/education/education';
 import Project from './components/project/project';
+import logo from "./asset/logo-modified.png";
+import Skills from './skills/skills';
+import Contact from './contact/contact';
 
 function App() {
   return (
@@ -12,10 +14,21 @@ function App() {
       <Nav/>
       <Home/>
       <About/>
-      <Education/>
+      <Skills/>
       <Project/>
+      <Contact/>
       <div id='footer'>
-      <i class="fa-regular fa-copyright"></i> amalraj-Portfolio
+      <div className='footer-pic-container'>
+            <div>
+              <div className='l'>
+              <img src={logo} alt='logo' className='footer-pic'/>
+              </div>
+              <div className='dot'></div>
+            </div>
+          </div>
+        <div className='footer-h1'>
+      <i class="fa-regular fa-copyright"></i> Amalraj-Portfolio
+        </div>
       </div>
     </div>
   );

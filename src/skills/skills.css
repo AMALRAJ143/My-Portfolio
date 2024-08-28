@@ -1,0 +1,114 @@
+.skills-container{
+    text-align: center;
+    width: 100%;
+    color: #18b1a6;
+  }
+
+  .skills-head{
+    color: #015f4d;
+  }
+
+  .skills{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    justify-content: space-around;
+  }
+  
+  .skill-card {
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+  }
+  
+  .skill-card .card-front,
+  .skill-card .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .skill-card .card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transform: rotateY(0deg);
+  }
+  .skill-card .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    transform: rotateY(180deg);
+    padding: 10px;
+    gap: 10px;
+    text-align: center;
+    border: 2px solid;
+  }
+  
+  
+  .skill-card:hover .card-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .skill-card:hover .card-back {
+    transform: rotateY(0deg);
+  }
+ 
+  .icon {
+    font-size: 20px;
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  .skill-card h3 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .skill-card p {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 0;
+  }
+  .skills-btn {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: none;
+  }
+  
+  /* mobile viwe */
+  @media screen and (max-width:767px) {
+    .skills-container{
+        margin-top: 30px;
+      }
+      .skills-head{
+        font-size: 25px;
+      }
+  }
+  @media only screen and (min-width:768px) and (max-width:1023px) {
+    .skills-container{
+        margin-top: 50px;
+      }
+     
+  }

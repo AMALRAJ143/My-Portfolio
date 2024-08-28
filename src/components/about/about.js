@@ -22,19 +22,19 @@ export default function About() {
           <div className="accademy">
             <h1 className="accademy-head">Bachelor of Engineering</h1>
             <p className="specialization">Computer Science and Engineering</p>
-            <p className="descriptions">I have successfully completed my Bachelor of Engineering in Computer Science and Engineering at this college with a <span className="b">CGPA of " 7.63 "</span></p>
+            <p className="descriptions">I have successfully completed my Bachelor of Engineering in Computer Science and Engineering at<span className="b"> Universal Collage of Engineering and Technology</span> with a <span className="b">CGPA of " 7.63 "</span></p>
           </div>
           <div className="accademy">
             <h1 className="accademy-head">Higher Secondary School(12th)</h1>
             <p className="specialization">Computer Science</p>
-            <p className="descriptions">I have successfully completed my Higher Secondary Certificate (HSC) at this school, and I achieving a<span className="b"> score of " 342 "</span></p>
+            <p className="descriptions">I have successfully completed my Higher Secondary Certificate (HSC) at <span className="b">NVC Government Higher Secondary School</span>, and I achieving a<span className="b"> score of " 342 "</span></p>
           </div>
           <div className="accademy">
             <h1 className="accademy-head">Secondary School(10th)</h1>
             <p className="specialization">Stateboard</p>
-            <p className="descriptions">I have successfully completed my SSLC(10th) at this school, and I achieving a<span className="b"> score of " 440 "</span></p>
+            <p className="descriptions">I have successfully completed my SSLC(10th) at  <span className="b">NVC Government Higher Secondary School</span>, and I achieving a<span className="b"> score of " 440 "</span></p>
           </div>
-        <a href={resume} target="_blank" className="cv">View CV</a>
+        <a href={resume} target="_blank" className="cv" id="view-cv">View CV</a>
         <a href={resume} download="resume.pdf" className="cv">Download CV</a>
         </div>
         </div>

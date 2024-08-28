@@ -8,7 +8,7 @@ export default function Education() {
   useEffect(() => {
     const lastIndex = educationData.length - 1;
 
-    if (index < 0) {
+    if (index < 0) { 
       setIndex(lastIndex);
     }
 

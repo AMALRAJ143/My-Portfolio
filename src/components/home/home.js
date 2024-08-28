@@ -23,15 +23,16 @@ export default function Home() {
       <div id="container-1">
         <div id="content">
           <div id="left-content">
-            <h1>Welcome,</h1>
-            <h1>I'am<span className="name">Amalraj</span></h1>
+            <h1>Hello,</h1>
+            <h1><span className="name">I'm Amalraj</span></h1>
             <span ref={el} className="profession" />
             <p className="quote">"Your Future is Created by What You Do Today Not Tomorrow!"</p>
             <div id="icons">
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-regular fa-envelope"></i>
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
+           <a href="https://www.linkedin.com/in/amalraj1710/" target="_blank" > <i class="fa-brands fa-linkedin"></i></a>
+           <a href="https://github.com/AMALRAJ143" target="_blank"><i class="fa-brands fa-github"></i></a>
+           <a href="https://www.instagram.com/amalraj143_?igsh=MXQzN3hrcHR4NnE1aA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            {/* <i class="fa-brands fa-facebook"></i> */}
+            
             </div>
           </div>
           <div id="right-content">
