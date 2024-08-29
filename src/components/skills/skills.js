@@ -1,13 +1,13 @@
 import React from "react";
 import "./skills.css";
-import html from "../asset/icons8-html-480.png"
-import css from "../asset/icons8-css-480.png"
-import js from "../asset/icons8-javascript-480.png"
-import react from "../asset/icons8-react-js-480.png"
-import node from "../asset/icons8-nodejs-480.png"
-import express from "../asset/icons8-express-js-480.png"
-import mongo from "../asset/icons8-mongo-db-96.png"
-import java from "../asset/icons8-java-480.png"
+import html from "../../asset/icons8-html-480.png"
+import css from "../../asset/icons8-css-480.png"
+import js from "../../asset/icons8-javascript-480.png"
+import react from "../../asset/icons8-react-js-480.png"
+import node from "../../asset/icons8-nodejs-480.png"
+import express from "../../asset/icons8-express-js-480.png"
+import mongo from "../../asset/icons8-mongo-db-96.png"
+import java from "../../asset/icons8-java-480.png"
 
 const skills = [
   { name: "HTML", description: "Markup language for creating web pages.", icon: html, backgroundColor: "#E34F26", link: "https://developer.mozilla.org/en-US/docs/Web/HTML" },

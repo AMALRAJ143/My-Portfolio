@@ -1,12 +1,11 @@
 import './App.css';
-import "primereact/resources/themes/lara-light-indigo/theme.css";
 import Nav from './components/nav/nav';
 import Home from './components/home/home';
 import About from './components/about/about';
 import Project from './components/project/project';
 import logo from "./asset/logo-modified.png";
-import Skills from './skills/skills';
-import Contact from './contact/contact';
+import Skills from './components/skills/skills';
+import Contact from './components/contact/contact';
 
 function App() {
   return (

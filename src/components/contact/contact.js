@@ -1,7 +1,7 @@
 import "./contact.css"
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import contact from "../asset/Screenshot 2024-08-27 121452.png"
+import contact from "../../asset/Screenshot 2024-08-27 121452.png";
 
 const Contact = () => {
   // State for form data
